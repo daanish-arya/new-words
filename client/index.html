@@ -1,16 +1,25 @@
-<html>
+<html ng-app="myApp">
 <head>
     <title>
+       
         arey what a sito b0ssssss    
     </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
     
 
-<body>
-    Hello world!
+<body ng-controller="MyController">
+    <h1>Learn New Words</h1>
     
-</body>    
+    <div>
+        <input ng-model='newWord'>
+    </div>
+    
+    <link rel = "stylesheet" type = "text/css" href="style.css">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="index.js"></script>
 
+</body>    
 
 
 </html>
