@@ -11,13 +11,19 @@
 <body ng-controller="MyController">
     <h1>Learn New Words</h1>
     
+    <div ng-repeat = "w in words"> {{w.word}}</div>
+
     <div>
         <input ng-model='newWord'>
     </div>
     
+    
+    
     <link rel = "stylesheet" type = "text/css" href="style.css">
     <script src="node_modules/angular/angular.js"></script>
     <script src="index.js"></script>
+    <button ng-click="saveThisWord()">Save</button>
+    <button ng-click="getSavedWords()">Update List</button>
 
 </body>    
 
